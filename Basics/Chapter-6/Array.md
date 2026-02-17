@@ -418,7 +418,7 @@ Example
 
 ```javascript
 const programmingLaguages = ["JavaScript", "Python", "Java", "C++", "Ruby"];
-console.log(programmingLaguages[3]);
+console.log(programmingLaguages.at(3));
 ```
 
 Output
@@ -732,7 +732,7 @@ Output
 [ 0, 1, 2, 3, 4 ]
 ```
 
-#### faltMap()
+#### flatMap()
 
 `flatMap()` method creates and returns a new array formed by applying a callback function to each element and then flattn the result by one level depth. Basically it is the combination of `map()` and `falt()`.
 

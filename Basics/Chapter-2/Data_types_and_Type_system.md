@@ -7,7 +7,7 @@ These types define what type of values is being store - number, string, boolean,
 
 ### Types of Data types
 
-1. **Primitive Types**: Primitive is a data that is not `object` and has no methods or properties. These are copied directly.
+**1. Primitive Types**: Primitive is a data that is not `object` and has no methods or properties. These are copied directly.
    There are types of primtive data types:
 
 - number
@@ -18,7 +18,7 @@ These types define what type of values is being store - number, string, boolean,
 - symbol
 - bigint
 
-2. **Reference Types**: Reference is a data that is `object` and has methods or properties. These are not copied directly, but by reference.
+**2. Reference Types**: Reference is a data that is `object` and has methods or properties. These are not copied directly, but by reference.
    There are 3 types of reference data types:
 
 - object
@@ -51,7 +51,7 @@ typeof [] // this is an array but its types is object
 typeof function(){} // function
 ```
 
-#### Facts
+Facts
 
 - typeof null === "object" is a bug, but has existed since the early days of JS.
 

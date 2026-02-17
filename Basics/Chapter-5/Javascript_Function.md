@@ -8,7 +8,7 @@ Functions are the reusable block of code design to perform specific tasks when *
 
 A **function declaration** (also known as **function defination** or **function statement**) consist of the `function` keyword.
 
-#### Syntax
+Syntax
 
 ```javascript
 function functionName() {
@@ -24,7 +24,7 @@ functionName(); // function invoke
 
 Function expression is very similar to **function declaration** but have a key difference. In function expression we can create a function with name, but function expression cannot have any name instead it is stored in a variables and can be use as anonymous function.
 
-#### Syntax
+Syntax
 
 ```javascript
 const abcd = function () {
@@ -34,15 +34,15 @@ const abcd = function () {
 
 ## Function Parameters & Arguments
 
-### Parameters
+### 1. Parameters
 
 Parameter are the placeholders for incoming data defined at function declaration stage similar to variables.
 
-### Arguments
+### 2. Arguments
 
 Arguments are actual values for parameters given at the time of function invokation.
 
-#### Syntax
+Syntax
 
 ```javascript
 function greet(name) {
@@ -56,7 +56,7 @@ greet(`Javascript`);
 - **name:** Function parameter
 - **\`javascript\`**: Argument of function
 
-#### Example
+Example
 
 ```javascript
 function greetUser(user) {
@@ -65,9 +65,9 @@ function greetUser(user) {
 greetUser(`John doe`);
 ```
 
-#### Output
+Output
 
-```
+```text
 Hello, John doe
 ```
 
@@ -81,9 +81,11 @@ Hello, John doe
 
 ## Types of Functions
 
-1. **Named Function**: A function that has its own name when declared. It’s easy to reuse and debug because the name shows up in error messages or stack traces.
+### Named Function
 
-#### Example
+A function that has its own name when declared. It’s easy to reuse and debug because the name shows up in error messages or stack traces.
+
+Example
 
 ```javascript
 function greet() {
@@ -92,9 +94,11 @@ function greet() {
 console.log(greet());
 ```
 
-2. **Anomyous Function** A function that does not have a name. It is usually assigned to a variable or used as a callback. Since it has no name, it cannot be called directly.
+### Anomyous Function
 
-#### Example
+A function that does not have a name. It is usually assigned to a variable or used as a callback. Since it has no name, it cannot be called directly.
+
+Example
 
 ```javascript
 const greet = function () {
@@ -103,9 +107,11 @@ const greet = function () {
 console.log(greet());
 ```
 
-3. **Fat Arrow Function**: A new way to write functions using the => syntax. They are shorter and do not have their own this binding, which makes them useful in some cases.
+### Fat Arrow Function
 
-#### Example
+A new way to write functions using the => syntax. They are shorter and do not have their own this binding, which makes them useful in some cases.
+
+Example
 
 ```javascript
 const greet = () => {
@@ -114,9 +120,11 @@ const greet = () => {
 console.log(greet());
 ```
 
-4.  Immediately Invoked Function Expression (IIFE): IIFE functions are executed immediately after their definition. They are often used to create isolated scopes.
+### Immediately Invoked Function Expression (IIFE)
 
-#### Example
+IIFE functions are executed immediately after their definition. They are often used to create isolated scopes.
+
+Example
 
 ```javascript
 (function () {
@@ -124,9 +132,11 @@ console.log(greet());
 })();
 ```
 
-5. **High Order Function**: A function that either takes another function as a parameter or returns another function. These are common in JavaScript (e.g., map, filter, reduce).
+### High Order Function
 
-#### Example
+A function that either takes another function as a parameter or returns another function. These are common in JavaScript (e.g., map, filter, reduce).
+
+Example
 
 ```javascript
 function multiplyBy(factor) {
@@ -139,9 +149,11 @@ const double = multiplyBy(2);
 console.log(double(5));
 ```
 
-6. **Callback Function**: A callback function is passed as an argument to another function and is executed after the completion of that function.
+### Callback Function
 
-#### Example
+A callback function is passed as an argument to another function and is executed after the completion of that function.
+
+Example
 
 ```javascript
 function num(n, callback) {
@@ -153,9 +165,11 @@ const double = (n) => n * 2;
 console.log(num(5, double));
 ```
 
-7. **Pure Function**: Pure functions return the same output for the same inputs and do not produce side effects. They do not modify state outside their scope, such as modifying global variables.
+### Pure Function
 
-#### Example
+Pure functions return the same output for the same inputs and do not produce side effects. They do not modify state outside their scope, such as modifying global variables.
+
+Example
 
 ```javascript
 function pureAdd(a, b) {

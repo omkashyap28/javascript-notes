@@ -6,9 +6,9 @@ Variables are containers that hold data.
 They help us store, reuse, and update information in JavaScript — from simple values like
 numbers to complex data like arrays and objects.
 
-In javascript we can create variables with `var`, ` let` and `const` keywords.
+In javascript we can create variables with `var`, `let` and `const` keywords.
 
-1. **var**
+### 1. **var**
 
 - Old and risky. We cannot create variables with **var** in modern javascript.
 - Functional scoped.
@@ -19,7 +19,7 @@ In javascript we can create variables with `var`, ` let` and `const` keywords.
 var a = 1;
 ```
 
-2. **let**
+### 2. **let**
 
 - Modern and safe. We create variables with **let** in javascript.
 - Block scoped.
@@ -30,7 +30,7 @@ var a = 1;
 let a = 1;
 ```
 
-3. **const**
+### 3. **const**
 
 - Modern and safe. We create variables with **const** in javascript.
 - Hoisting not applied.
@@ -60,7 +60,7 @@ Variables declared with `let`, `const` or `class` is said to be in a **temporal 
 
 Inside TDZ, the variables has not been declared and initialzed with any value, and any attempt to access them will result in **ReferenceError**. The variable initialzed with value when execution reaches the place where variable is declared. If no initial value was specified with the variable declaration, it will be initialized with a value of `undefined`.
 
-#### Facts
+Facts
 
 Variable decalred with `var` keyword does't have **temporal dead zone**.
 Variables declared with `var` keyword return `undefined` if they are accessed before they are declared.
@@ -70,7 +70,7 @@ Variables declared with `var` keyword return `undefined` if they are accessed be
 Javasript prepares memory before running code.
 It moves all declarations to the top and initialize later - this is called hoisting.
 
-#### Facts
+Facts
 
 - Variables declared with `var` is hoisted and set to undefined.
 

@@ -11,17 +11,18 @@ There are many types of Operators in Javascript:
 5. Unary Operators
 6. Ternary Operators
 
-### 1. Arithmetic Operators
+## Javascript Operators
 
 Arithmetic operators are operate on numeric values and used for mathematical calculations.
-|Operator | Name | Description |
-|---------|------|-------------|
-|`+` | Addition | Used to add/concatinate two operands |
-`-` | Substraction | Used to substract two numeric operands |
-|`*` | Multiplication | Returns the multiplication value of two numeric operands |
-| `/` | Division | Return qeustiont |\
-| `%` | Modulas | Returns the reminder after division of two numeric operands |
-| `**` | Exponentiation | Returns the power value of operand |
+
+| Operator | Name           | Description                                                  |
+| -------- | -------------- | ------------------------------------------------------------ |
+| `+`      | Addition       | Used to add/concatenate two operands                         |
+| `-`      | Subtraction    | Used to subtract two numeric operands                        |
+| `*`      | Multiplication | Returns the multiplication value of two numeric operands     |
+| `/`      | Division       | Returns the quotient                                         |
+| `%`      | Modulus        | Returns the remainder after division of two numeric operands |
+| `**`     | Exponentiation | Returns the power value of operand                           |
 
 ```javascript
 console.log(10 + 10); // 20
@@ -35,17 +36,18 @@ console.log(2 ** 3); // (2 * 2 * 2) = 8
 
 ### 2. Comparison Operators
 
-Comparison operators are used to make comparisons between two operands of any data types and return `boolean` (`true` if operands are equal and `false` if operands are not equal).  
-|Operator | Name | Description |
-|---------|------|-------------|
-| `==` | Equal | Returns `true` if operands are equal |
-| `!=` | Not Equal | Returns `true` if operands are not equal |
-| `===` | Strict Equal | Return `true` if oprands are equal and same types |
-| `!==` | Not Strict Equal | Return `true` if operands are not equal but same types.
-| `<` | Smaller than | Return `true` if left operand is less than right operand |
-| `>` | Greater than | Return `true` if left operand is greater than right |
-| `<=` | Smaller than or Equal | Return `true` if left operand is less than or equal to right operand |
-| `<=` | Greater than or Equal | Return `true` if left operand is greater than or equal to right operand |
+Comparison operators are used to make comparisons between two operands of any data types and return `boolean` (`true` if operands are equal and `false` if operands are not equal).
+
+| Operator | Name                  | Description                                                             |
+| -------- | --------------------- | ----------------------------------------------------------------------- |
+| `==`     | Equal                 | Returns `true` if operands are equal                                    |
+| `!=`     | Not Equal             | Returns `true` if operands are not equal                                |
+| `===`    | Strict Equal          | Return `true` if oprands are equal and same types                       |
+| `!==`    | Not Strict Equal      | Return `true` if operands are not equal but same types                  |
+| `<`      | Smaller than          | Return `true` if left operand is less than right operand                |
+| `>`      | Greater than          | Return `true` if left operand is greater than right                     |
+| `<=`     | Smaller than or Equal | Return `true` if left operand is less than or equal to right operand    |
+| `<=`     | Greater than or Equal | Return `true` if left operand is greater than or equal to right operand |
 
 ```javascript
 console.log(10 == "10"); // true
@@ -63,11 +65,12 @@ console.log(1000 <= 1000); // true
 ### 3. Logical Operators
 
 Logical operators are used with `boolean` values, they return `true` or `false`. However, the `&&`, `||`, and `??` operators actually return the value of one of the specified operands.
-|Operator | Syntax | Name | Description |
-|---------|------ |------|-------------|
-| `\|\|` | `expr1 \|\| expr2` | Logical Or | Returns `expr1` if it can be converted to `true`; otherwise, returns `expr2`. Thus, when used with Boolean values, returns `true` if either operand is `true`; if both are `false`, returns `false` |
-| ?? | `expr1 ?? expr2` | Nullish Coalescing | Returns `expr1` if it is neither `null` or `undefined`; otherwise, returns `expr2` |
-| ! | `!expr1` | Logical Not | Returns false if its single operand can be converted to true; otherwise, returns true |
+
+|Operator | Syntax             | Name               | Description                                                                                                                                                                                         |
+|---------|--------------------|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `\|\|`  | `expr1 \|\| expr2` | Logical Or         | Returns `expr1` if it can be converted to `true`; otherwise, returns `expr2`. Thus, when used with Boolean values, returns `true` if either operand is `true`; if both are `false`, returns `false` |
+| ??      | `expr1 ?? expr2`   | Nullish Coalescing | Returns `expr1` if it is neither `null` or `undefined`; otherwise, returns `expr2`                                                                                                                  |
+| !       | `!expr1`           | Logical Not        | Returns false if its single operand can be converted to true; otherwise, returns true                                                                                                               |
 
 ```javascript
 console.log(true && true); // true
@@ -91,15 +94,16 @@ console.log(!(5 > 3)); // false
 ### 4. Assignment Operators
 
 Assignment Operators assign value to its left operand based on the value of its right operand.
-|Operator | Name | Description |
-|---------|------|-------------|
-| `=` | Assignment | Assing value of right operand to left operand |
-| `+=` | Addition Assignment | Perform addition/concatination on two operand and assign the result in left operand |
-| `-=` | Subtraction assignment | Perform substraction on two operand and assign the result to left operand |
-| `*=` | Multiplication Assignment | Perform multiplication on two operand and assign the result to left operand |
-| `/=` | Division Assignment | Perform division on two operand and assign the result to left operand |
-| `%=` | Remainder Assignment | Perform remainder on two operand and assign the result to left operand |
-| `**=` | Exponentiation assignment | Perform exponentiation on two operand and assign the result to left operand |
+
+|Operator | Name                      | Description                                                                         |
+|---------|---------------------------|-------------------------------------------------------------------------------------|
+| `=`     | Assignment                | Assing value of right operand to left operand                                       |
+| `+=`    | Addition Assignment       | Perform addition/concatination on two operand and assign the result in left operand |
+| `-=`    | Subtraction assignment    | Perform substraction on two operand and assign the result to left operand           |
+| `*=`    | Multiplication Assignment | Perform multiplication on two operand and assign the result to left operand         |
+| `/=`    | Division Assignment       | Perform division on two operand and assign the result to left operand               |
+| `%=`    | Remainder Assignment      | Perform remainder on two operand and assign the result to left operand              |
+| `**=`   | Exponentiation assignment | Perform exponentiation on two operand and assign the result to left operand         |
 
 ```javascript
 let a = 10;

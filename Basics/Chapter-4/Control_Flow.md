@@ -26,7 +26,7 @@ if (age <= 18) {
 }
 ```
 
-```
+```text
 Teenager
 ```
 
@@ -47,7 +47,7 @@ if (score >= 90) {
 }
 ```
 
-```
+```text
 Grade B
 ```
 
@@ -70,7 +70,7 @@ if (age >= 18) {
 }
 ```
 
-```
+```text
 You can drive
 ```
 
@@ -95,7 +95,7 @@ switch (day) {
 }
 ```
 
-```
+```text
 You can drive
 ```
 
@@ -120,15 +120,15 @@ There are many types of loops available in Javascript:
 
 `for` loop is a control flow loop that allows code to be executed repeatedly based on a condition. It consist of three parts: **initialization**, **condition** and **increament/decreament**.
 
-#### Syntax
+Syntax
 
-```
+```javascript
 for (initialization; condition; increament/decreament) {
   // code...
 }
 ```
 
-#### Output
+Output
 
 ```javascript
 // for loop begins when x=2
@@ -138,9 +138,9 @@ for (let x = 2; x <= 4; x++) {
 }
 ```
 
-#### Result
+Result
 
-```
+```text
 Value of x:2
 Value of x:3
 Value of x:4
@@ -150,9 +150,9 @@ Value of x:4
 
 `while` loop executes a block of code as long as specified condition is true. This loops evaluates the condition before each iteration and continues running as long as condition remains true. It consist of three parts: **initialization**, **condition** and **increament/decreament**.
 
-#### Syntax
+Syntax
 
-```
+```javascript
 initialization
 while(condition) {
    // code
@@ -161,7 +161,7 @@ while(condition) {
 }
 ```
 
-#### Example
+Example
 
 ```javascript
 let count = 0;
@@ -171,9 +171,9 @@ while (count <= 5) {
 }
 ```
 
-#### Output
+Output
 
-```
+```text
 Value of count:1
 Value of count:2
 Value of count:3
@@ -185,9 +185,9 @@ Value of count:5
 
 `do-while` loops is a type of `while` loop, but with a key difference. `do-while` loop guarantees that the block of the code inside the loop will executed atleast once regardless of condition if `true` or `false`.
 
-#### Syntax
+Syntax
 
-```
+```javascript
 initialization
 do {
    // code
@@ -196,7 +196,7 @@ do {
 } while(condition);
 ```
 
-#### Examples
+Examples
 
 > If codition is true
 
@@ -210,7 +210,7 @@ do {
 
 Output
 
-```
+```text
 Value of count:1
 Value of count:2
 Value of count:3
@@ -228,9 +228,9 @@ do {
 } while (count > 5);
 ```
 
-#### Output
+Output
 
-```
+```text
 Value of count:1
 ```
 
@@ -242,7 +242,7 @@ We already discussed about loops like what they are? and why use loops?. So lets
 
 Use `break` statement to terminate all iterations of loop. For example a loop which print numbers between 1 to 10 but have to stop remaining execution when number is 5, so we use `break` statement to stop the remaining execution of loop.
 
-#### Example
+Example
 
 ```javascript
 for (let i = 0; i <= 10; i++) {
@@ -251,9 +251,9 @@ for (let i = 0; i <= 10; i++) {
 }
 ```
 
-#### Output
+Output
 
-```
+```text
 0
 1
 2
@@ -265,7 +265,7 @@ for (let i = 0; i <= 10; i++) {
 
 Use `continue` statement to skip a specified iterations of loop. For example a loop which print numbers between 1 to 10 but have to skip single execution when number is 5, so we use `continue` statement to skip fifth execution and continues the remaining execution of loop.
 
-#### Example
+Example
 
 ```javascript
 for (let i = 0; i <= 10; i++) {
@@ -274,9 +274,9 @@ for (let i = 0; i <= 10; i++) {
 }
 ```
 
-#### Output
+Output
 
-```
+```text
 0
 1
 2
